@@ -11,6 +11,7 @@ bin
 var
 sdist
 develop-eggs
+docs/_build
 .installed.cfg
 
 # Installer logs
@@ -25,3 +26,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+.idea
