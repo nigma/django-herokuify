@@ -1,0 +1,12 @@
+# Cache Config
+pylibmc>=1.2.3
+django-pylibmc-sasl>=0.2.4
+django-heroku-memcacheify>=0.3
+
+# DB Config
+dj-database-url>=0.2.1
+django-heroku-postgresify>=0.2
+
+# Storage backend
+django-storages>=1.1.5
+boto>=2.6.0
