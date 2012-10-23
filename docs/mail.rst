@@ -33,10 +33,18 @@ Import settings from this module into your Django project settings::
 Mailgun add-on
 --------------
 
-Use ``heroku addons`` command to subscribe for Mailgun add-on
-(see https://devcenter.heroku.com/articles/mailgun)::
+Use ``heroku addons`` command to subscribe for
+`Mailgun add-on <https://addons.heroku.com/mailgun>`:
+
+  .. code-block:: shell
 
     heroku addons:add mailgun:<PLAN>
+
+Quick start with:
+
+  .. code-block:: shell
+
+    heroku addons:add mailgun:starter
 
 
 Defined model attributes
