@@ -15,7 +15,7 @@ In the Django ``settings.py`` of your Heroku project add:
 
     import herokuify
 
-    from herokuify.common import *                # Common settings, SSL proxy header
+    from herokuify.common import *              # Common settings, SSL proxy header
     from herokuify.aws import *                 # AWS access keys as configured in env
     from herokuify.mail.mailgun import *        # Email settings for Mailgun add-on
 
