@@ -11,8 +11,8 @@ Quickstart
 
 Simplify Django configuration in two easy steps:
 
-1. Include ``django-herokuify`` package and its `dependencies`_ in
-   your ``requirements.txt`` file.
+1. Include ``django-herokuify`` and ``pylibmc`` packages in your
+   ``requirements.txt`` file.
 
 2. In the Django ``settings.py`` of your Heroku project add:
 
@@ -61,6 +61,10 @@ Dependencies
 
     django-storages>=1.1.5
     boto>=2.6.0
+
+Note: It is necessary include ``pylibmc`` package entry in your project's
+root ``requirements.txt`` file. The Heroku Django buildpack checks for this
+entry and configures the ``libmemcached`` C build dependency.
 
 Content
 -------

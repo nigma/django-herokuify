@@ -1,4 +1,4 @@
-Automatic Djagon configuration and utilities for Heroku
+Automatic Django configuration and utilities for Heroku
 =======================================================
 
 Quickstart
@@ -6,7 +6,8 @@ Quickstart
 
 Simplify Django configuration in two easy steps:
 
-Include ``django-herokuify`` package in your ``requirements.txt`` file.
+Include ``django-herokuify`` and ``pylibmc`` packages in your
+``requirements.txt`` file.
 
 In the Django ``settings.py`` of your Heroku project add:
 
@@ -35,6 +36,10 @@ and Django Compressor:
 
     COMPRESS_STORAGE = "herokuify.storage.CachedS3StaticStorage"
     COMPRESS_OFFLINE = True
+
+Note: The ``pylibmc`` package entry in your project's root ``requirements.txt``
+file is necessary for Heroku Django buildpack to properly configure
+the ``libmemcached`` C dependency.
 
 Documentation
 -------------
