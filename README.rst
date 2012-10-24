@@ -1,4 +1,4 @@
-Automatic Djagon configuration and utilities for Heroku
+Automatic Django configuration and utilities for Heroku
 =======================================================
 
 Quickstart
