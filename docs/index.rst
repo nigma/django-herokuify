@@ -1,8 +1,3 @@
-.. django-herokuify documentation master file, created by
-   sphinx-quickstart on Mon Oct 22 21:48:26 2012.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Automatic Django configuration and utilities for Heroku
 =======================================================
 
@@ -20,9 +15,10 @@ Simplify Django configuration in two easy steps:
 
     import herokuify
 
-    from herokuify.common import *            # Common settings, SSL proxy header
+    from herokuify.common import *          # Common settings, SSL proxy header
     from herokuify.aws import *             # AWS access keys
     from herokuify.mail.mailgun import *    # Mailgun email add-on settings
+    from herokuify.mail.sendgrid import *   # ... or Sendgrid
 
     DATABASES = herokuify.get_db_config()   # Database config
     CACHES = herokuify.get_cache_config()   # Memcache config for Memcache/MemCachier

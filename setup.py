@@ -3,25 +3,26 @@
 
 from setuptools import setup, find_packages
 
-version = "1.0.pre1"
+
+version = "1.0.pre2"
 
 setup(
-    name = "django-herokuify",
-    version = version,
-    description = "Automatic Django configuration and utilities for Heroku.",
-    license = "BSD",
+    name="django-herokuify",
+    version=version,
+    description="Automatic Django configuration and utilities for Heroku.",
+    license="BSD",
 
-    author = "Filip Wasilewski",
-    author_email = "en@ig.ma",
+    author="Filip Wasilewski",
+    author_email="en@ig.ma",
 
-    url = "https://github.com/nigma/django-herokuify",
+    url="https://github.com/nigma/django-herokuify",
     download_url='https://github.com/nigma/django-herokuify/zipball/master',
 
-    long_description = open("README.rst").read(),
+    long_description=open("README.rst").read(),
 
-    packages = find_packages(),
+    packages=find_packages(),
     include_package_data=True,
-    classifiers = [
+    classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
         "Framework :: Django",
@@ -34,5 +35,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
 
-    install_requires = filter(None, open("requirements.txt").read().splitlines())
+    install_requires=filter(None, open("requirements.txt").read().splitlines())
 )

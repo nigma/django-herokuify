@@ -35,7 +35,16 @@ collectstatic command and offline assets compression:
     COMPRESS_STORAGE = "herokuify.storage.CachedS3StaticStorage"
     COMPRESS_OFFLINE = True
 
-Remember to configure and include :doc:`aws` in your settings as well.
+
+Remember to configure and include :doc:`aws` config in your settings
+as well enable user environment variables in the
+[Slug compilation](https://devcenter.heroku.com/articles/slug-compiler) build
+phase, so the storage backend is able to connect to S3 when executing
+``collectstatic`` and ``compress`` commands:
+
+  .. code-block: shell
+
+    heroku labs:enable user-env-compile
 
 .. note::
 
