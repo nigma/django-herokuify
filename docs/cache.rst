@@ -33,7 +33,7 @@ or `MemCachier <https://addons.heroku.com/memcachier>`_.
 
 Quick start with either:
 
-  .. code-block:: shell
+  .. code-block:: bash
 
     heroku addons:add memcache:5mb
 

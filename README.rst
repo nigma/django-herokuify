@@ -18,6 +18,7 @@ In the Django ``settings.py`` of your Heroku project add:
     from herokuify.common import *              # Common settings, SSL proxy header
     from herokuify.aws import *                 # AWS access keys as configured in env
     from herokuify.mail.mailgun import *        # Email settings for Mailgun add-on
+    from herokuify.mail.sendgrid import *       # ... or Sendgrid
 
     DATABASES = herokuify.get_db_config()       # Database config
     CACHES = herokuify.get_cache_config()       # Cache config for Memcache/MemCachier

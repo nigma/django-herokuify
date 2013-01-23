@@ -1,7 +1,7 @@
 .. _common:
 
 Common settings
-=============
+===============
 
 Commonly used configuration.
 
