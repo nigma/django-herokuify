@@ -79,4 +79,4 @@ Other Resources
 
 - GitHub repository - https://github.com/nigma/django-herokuify
 - PyPi Package site - http://pypi.python.org/pypi/django-herokuify
-- `Distutils dev version link <https://github.com/nigma/django-herokuify/tarball/develop#egg=django-herokuify-dev>`_
+- `Distutils dev version link <https://github.com/nigma/django-herokuify/tarball/master#egg=django-herokuify-dev>`_

@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+from os.path import abspath, dirname, join
 from setuptools import setup, find_packages
 
 
-version = "1.0.pre2"
+version = "1.0.pre3"
 
 setup(
     name="django-herokuify",
@@ -35,5 +36,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
 
-    install_requires=filter(None, open("requirements.txt").read().splitlines())
+    install_requires=filter(None, open(
+        abspath(join(dirname(__file__), "requirements.txt"))
+    ).read().splitlines())
 )
