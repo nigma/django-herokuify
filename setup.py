@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 
-version = "1.0.pre1"
+version = "1.0.pre2"
 
 setup(
     name="django-herokuify",
