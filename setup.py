@@ -5,7 +5,7 @@ from os.path import abspath, dirname, join
 from setuptools import setup, find_packages
 
 
-version = "1.0.pre2"
+version = "1.0.pre3"
 
 setup(
     name="django-herokuify",
