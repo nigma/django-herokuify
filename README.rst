@@ -46,7 +46,7 @@ Documentation
 -------------
 
 See docs for more information:
-`django-herokuify.readthedocs.org <https://django-herokuify.readthedocs.org/>`_
+`http://pythonhosted.org/django-herokuify/ <http://pythonhosted.org/django-herokuify/>`_
 
 Dependencies
 ------------
